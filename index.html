@@ -3,70 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <title>Gries - Assignment One</title>
 </head>
+
+
+<!--===========================================================
+NOT COMPLETE YET 
+============================================================-->
 
 <body>
 <!--===========================================================
 HEADER 
 ============================================================-->
 <header>
-	<div class="wrapper">
-		<div class="row">
-			<div class="f-left">
-				<h1><a href="#">Simple Design</a></h1>  
+	<div id="bg-white">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-1-2">
+					<h1><a href="#">Simple Design</a></h1>  
+				</div>
+				<nav class="col-1-2">
+					<ul>
+						<li><a href="#">Home</a> | </li>
+						<li><a href="#work">Work</a> | </li>
+						<li><a href="#bg-green">About</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="f-left">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
 		</div>
 	</div>
-	<div class="wrapper" id="bg-image">
-		<p>We Design Things</p>
-		<p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri. </p>
-		<ul>
-			<li><a href="#">Hire Us</a></li>
-			<li><a href="#">View Work</a></li>
-		</ul>
+	<div id="bg-img" class="nf">
+		<div class="wrapper">
+			<p>We Design Things</p>
+			<p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
+			<ul>
+				<li><a href="#">Hire Us</a></li>
+				<li><a href="#">View Work</a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 <!--===========================================================
 WORK
 ============================================================-->
-<section class="wrapper">
-	<header>
-		<h2>Work</h2>
-	</header>
+<section class="wrapper" id="work">
+	<div>
+		<header>
+			<h2>Work</h2>
+		</header>
+	</div>
 	<div class="row">
-		<section class="f-left">
-			<img>
+		<section class="col-1-4">
+			<a href="#"><img src="img/print-design.jpg" alt="Our beautiful print design."></a>
 			<header>
 				<h3>Print Design</h3>
 			</header>
 			<p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
 		</section>
-		<section class="f-left">
-			<img>
+		<section class="col-1-4">
+			<a href="#"><img src="img/interactive-design.jpg" alt=""></a>
 			<header>
 				<h3>Interactive</h3>
 			</header>
 			<p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
 		</section>
-		<section class="f-left">
-			<img>
+		<section class="col-1-4">
+			<a href="#"><img src="img/app-design.jpg" alt=""></a>
 			<header>
 				<h3>App Design</h3>
 			</header>
 			<p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
 		</section>
-		<section class="f-left">
-			<img>
+		<section class="col-1-4">
+			<a href="#"><img src="img/branding-design.jpg" alt=""></a>
 			<header>
 				<h3>Branding</h3>
 			</header>
@@ -79,40 +91,42 @@ OUR TEAM
 ============================================================-->
 <section id="bg-green">
 	<div class="wrapper">
-		<header>
-			<h2>Our Team</h2>
-		</header>
-		<p>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
+		<div class="col-5-8">
+			<header>
+				<h2>Our Team</h2>
+			</header>
+			<p>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
+		</div>
 		<div class="row">
-			<section class="f-left">
+			<section class="col-1-2">
 				<div class="row">
-					<div class="f-left">
-						<img>
+					<div class="col-1-2">
+						<img src="img/team-doe.jpg" alt="">
 					</div>
-					<div class="f-left">
+					<div class="col-1-2">
 						<header>
 							<h3>John Doe</h3>
 						</header>
 						<ul>
-							<li><a><img></a></li>
-							<lli><a><img></a></lli>
+							<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
 						</ul>
 						<p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
 					</div>
 				</div>
 			</section>
-			<section class="f-left">
+			<section class="col-1-2">
 				<div class="row">
-					<div class="f-left">
-						<img>
+					<div class="col-1-2">
+						<img src="img/team-jane.jpg" alt="">
 					</div>
-					<div class="f-left">
+					<div class="col-1-2">
 						<header>
 							<h3>Jane Doe</h3>
 						</header>
 						<ul>
-							<li><a><img></a></li>
-							<lli><a><img></a></lli>
+							<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
 						</ul>
 						<p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis. </p>
 					</div>
@@ -120,35 +134,35 @@ OUR TEAM
 			</section>
 		</div>
 		<div class="row">
-			<section class="f-left">
+			<section class="col-1-2">
 				<div class="row">
-					<div class="f-left">
-						<img>
+					<div class="col-1-2">
+						<img src="img/team-mary.jpg" alt="">
 					</div>
-					<div class="f-left">
+					<div class="col-1-2">
 						<header>
 							<h3>Mary Smith</h3>
 						</header>
 						<ul>
-							<li><a><img></a></li>
-							<lli><a><img></a></lli>
+							<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
 						</ul>
 						<p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
 					</div>
 				</div>
 			</section>
-			<section class="f-left">
+			<section class="col-1-2">
 				<div class="row">
-					<div class="f-left">
-						<img>
+					<div class="col-1-2">
+						<img src="img/team-smith.jpg" alt="">
 					</div>
-					<div class="f-left">
+					<div class="col-1-2">
 						<header>
 							<h3>Jon Smith</h3>
 						</header>
 						<ul>
-							<li><a><img></a></li>
-							<lli><a><img></a></lli>
+							<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
 						</ul>
 						<p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p>
 					</div>
@@ -160,18 +174,20 @@ OUR TEAM
 <!--===========================================================
 FOOTER
 ============================================================-->
-<footer class="wrapper row">
-	<div class="f-left">
-		<h4><a>Simple Design</a></h4>
+<footer id="bg-drk-green">
+	<div class="wrapper row">
+		<div class="col-1-3">
+			<h4><a href="#bg-white">Simple Design</a></h4>
+		</div>
+		<div class="col-1-3">
+			<p><a href="https://www.google.com/maps" target="_blank">6041 Old York Road<br>Dekalb, IL 60115</a></p>
+		</div>
+		<ul class="col-1-3">
+			<li><a href="#bg-white"> Home</a> | </li>
+			<li><a href="#work">Work</a> | </li>
+			<li><a href="#bg-green">About</a></li>
+		</ul>
 	</div>
-	<div class="f-left">
-		<p><a>6041 Old York Road<br>Dekalb, IL 60115</a></p>
-	</div>
-	<ul class="f-left">
-		<li><a> Home</a> | </li>
-		<li><a>Work</a> | </li>
-		<li><a>About</a></li>
-	</ul>
 </footer>
 
 </body>

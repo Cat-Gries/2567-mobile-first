@@ -12,9 +12,9 @@
 	1.5 - Lists
 	1.6 - Tables
 2.0 - Navigation Menus
-	3.1 - Main Menu
-	3.2 - Sub Menu
-	3.3 - Footer Menu
+	2.1 - Main Menu
+	2.2 - Sub Menu
+	2.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
 	3.2 - Section Name
@@ -34,11 +34,131 @@
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10px;
 }
 
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+h1, h2, h3, h4, a, #bg-img p:first-child  {
+	text-transform: uppercase;
+}
+
+#work p, #work h3, h2, #bg-img {
+	text-align: center;
+}
+
+nav a, footer a:hover, h1 a:hover {
+	color: #213227;
+}
+
+h1 a, nav a:hover {
+	color: #517668;
+}
+
+#bg-green, #bg-drk-green, #bg-drk-green a, #bg-img li a {
+	color: #fff;
+}
+
+h2, #bg-img p:first-child {
+	font-size: 6rem;
+}
+
+p, nav a, #bg-img a, #bg-drk-green li a {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.4rem;
+	line-height: 25px;
+}
+
+/*1.1 - Headings*/
+h1, #work h3 {
+	margin-bottom: 0;
+}
+
+h1 a {
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+h4 a {
+	font-size: 2rem;
+}
+
+/*1.2 - Body Copy*/
+#bg-img p:first-child {
+	font-weight: 900;
+	margin-bottom: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#bg-img p:nth-child(2) {
+	width: 700px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 900;
+	margin-left: 200px;
+	margin-bottom: 50px;
+}
+
+span {
+	display: none;
+}
+
+/*1.3 - Buttons*/
+a {
+	text-decoration: none;
+}
+
+#bg-img li {
+	margin-bottom: 50px;
+}
+
+#bg-img li a {
+	padding: 10px 40px;
+	background-color: #365049;
+}
+
+#bg-img li a:hover {
+	background-color: #213227;
+}
+
+#bg-img li:first-child a {
+	padding: 10px 50px;
+	margin-right: 20px;
+}
+
+/*1.5 - Lists*/
+li {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+nav li a, footer ul a {
+	padding-left: 35px;
+}
+
+nav, footer ul {
+	text-align: right;
+}
+
+/*2.1 - Main Menu*/
+nav li {
+	padding-top: 20px;
+}
+
+nav a {
+	font-weight: 900;
+}
+
+/*2.3 - Footer Menu*/
+
 
 /*--------------------------------------------------------------
 3.0 - Content
@@ -47,6 +167,10 @@
 .wrapper {
 	width: 75%;
 	margin: 0 auto;
+}
+
+.nf {
+	float: none;
 }
 
 .row:after {
@@ -190,6 +314,53 @@ img {
 	max-width: 100%;
 }
 
+#bg-img {
+	background: url(../img/bg-img.jpg) center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	padding-top: 250px;
+	border-bottom: 9px solid #c9e9ec;
+}
+
+#bg-green ul li:first-child a {
+	background: url(../img/icon-fb.png) no-repeat 0 0;
+	padding: 10px;
+}
+
+#bg-green ul li:last-child a {
+	background: url(../img/icon-twitter.png) no-repeat 0 0;
+}
+
+#bg-green ul li:last-child a {
+	padding: 10px 20px;
+	margin-left: 20px;
+}
+
+#bg-green div:first-child ul li a:hover {
+	background-position: 0  -30px;
+}
+
+#bg-green ul {
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+/*5.1 - Background Colors*/
+#bg-white {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#bg-green {
+	background-color: #517668;
+}
+
+#bg-drk-green {
+	background-color: #365049;
+}
 
 /*--------------------------------------------------------------
 6.0 - Responsive / Media Queries
